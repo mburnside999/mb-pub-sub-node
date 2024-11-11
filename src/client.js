@@ -176,7 +176,7 @@ export default class PubSubApiClient {
             try {
                 const auth = new SalesforceAuth(this.#config, this.#logger);
                 const conMetadata = await auth.authenticate();
-                this.#config.accessToken = conMetadata.accessToken;
+                //this.#config.accessToken = conMetadata.accessToken;
                 this.#config.username = conMetadata.username;
                 this.#config.instanceUrl = conMetadata.instanceUrl;
                 this.#config.organizationId = conMetadata.organizationId;
